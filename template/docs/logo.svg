@@ -62,7 +62,7 @@
                   x="265"
                   y="384"
                   alignment-baseline="center"
-                  text-anchor="middle">since <% year %></tspan>
+                  text-anchor="middle">since <% new Date().getFullYear() %></tspan>
             </text>
         </g>
     </g>
