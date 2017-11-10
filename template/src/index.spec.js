@@ -1,5 +1,5 @@
 <%_ if (compile) { -%>
-import <%= this.camelcase(name) %> from '../src'
+import <%= this.camelcase(name) %> from './'
 <%_ } else { -%>
 const <%= this.camelcase(name) %> = require('../')
 <%_ } -%>

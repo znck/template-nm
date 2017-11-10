@@ -16,7 +16,8 @@
     "test:cov": "jest --coverage<% if (eslint !== 'disable') { %> && npm run lint<% } %>",<% } %>
     "test": "<% if (eslint !== 'disable') { %>npm run lint<% } %><% if (unitTest) { %> && jest<% } else { %> && echo 'no tests!'<% } %>"<% if (eslint !== 'disable') { %>,
     "lint": "<%= eslint %>"<% } %><% if (compile) { %>,
-    "prepublish": "npm run build",
+    "prepare": "npm test && npm run build",
+    "prepublishOnly": "./publish.sh \"${AUTO_PUBLISH:-fail}\"",
     "build": "bili --filename index"<% } %><% if (poi) { %>,
     "example": "poi",
     "build:example": "poi build",
