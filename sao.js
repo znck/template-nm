@@ -85,8 +85,7 @@ module.exports = {
     'index.js': '!compile',
     'cli.js': 'cli',
     'circle-npm5.yml': 'pm === "npm5"',
-    'circle-yarn.yml': 'pm === "yarn"',
-    'example/**': 'poi'
+    'circle-yarn.yml': 'pm === "yarn"'
   },
   move: {
     // We keep `.gitignore` as `gitignore` in the project
