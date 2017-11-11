@@ -58,10 +58,6 @@
     <%_ if (unitTest) { -%>
     "babel-preset-env": "^1.4.0",
     <%_ } -%>
-    <%_ if (poi) { -%>
-    "gh-pages": "^1.0.0",
-    "poi": "^9.1.4",
-    <%_ } -%>
     "bili": "^0.17.0"<% } %>
   }<% if (eslint === 'xo') { %>,
   "xo": {
