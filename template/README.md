@@ -15,7 +15,7 @@
 </div>
 
 ## Introduction
-<% description %>
+<%= description %>
 
 ## Install
 
@@ -28,8 +28,7 @@
 ```js
 const <%= camelcasedName %> = require('<%= name %>')
 
-<%= camelcasedName %>()
-//=> foo
+...
 ```
 
 ## Contributing

@@ -18,12 +18,12 @@ module.exports = {
     },
     author: {
       message: 'What is your name',
-      default: ':gitUser:',
+      default: 'Rahul Kadyan',
       store: true
     },
     username: {
       message: 'What is your GitHub username',
-      default: ':gitUser:',
+      default: 'znck',
       store: true
     },
     email: {
@@ -48,12 +48,12 @@ module.exports = {
     unitTest: {
       message: 'Do you need unit test?',
       type: 'confirm',
-      default: false
+      default: true
     },
     coverage: {
       message: 'Do you want to add test coverage support?',
       type: 'confirm',
-      default: false,
+      default: true,
       when: answers => answers.unitTest
     },
     eslint: {
@@ -65,13 +65,7 @@ module.exports = {
     compile: {
       message: 'Do you need to compile ES2015 code?',
       type: 'confirm',
-      default: false
-    },
-    poi: {
-      type: 'confirm',
-      default: false,
-      message: 'Use egoist/poi to run and build example',
-      when: answers => answers.compile
+      default: true
     },
     cli: {
       message: 'Do you want to add a CLI?',
@@ -81,7 +75,8 @@ module.exports = {
     },
     twitter: {
       message: 'What is your twitter username?',
-      store: true
+      store: true,
+      default: '@znck0'
     }
   },
   filters: {
