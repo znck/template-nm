@@ -1,7 +1,7 @@
 <% const camelcasedName = this.camelcase(name) -%>
 
 <div class="text-xs-center" align="center" style="margin: 20px">
-  <img src="./docs/banner.svg" height="255" alt="<% name %>">
+  <img src="./docs/logo.svg" height="255" alt="<% name %>">
 </div>
 
 <div class="text-xs-center" align="center">
