@@ -26,13 +26,7 @@
     <% } %>
   },
   "author": "<%= username %> <<%= email %>>",
-  "license": "MIT",<% if (poi) { %>
-  "poi": {
-    "entry": "example/index.js",
-    "dist": "example/dist",
-    "homepage": "/"
-  },
-  <%_ } -%>
+  "license": "MIT",
   <%_ if (unitTest) { -%>
   "jest": {
     "testEnvironment": "node"
