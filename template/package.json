@@ -18,12 +18,7 @@
     "lint": "<%= eslint %>"<% } %><% if (compile) { %>,
     "prepare": "npm test && npm run build",
     "prepublishOnly": "./publish.sh \"${AUTO_PUBLISH:-fail}\"",
-    "build": "bili --filename index"<% } %><% if (poi) { %>,
-    "example": "poi",
-    "build:example": "poi build",
-    "gh": "gh-pages -d example/dist",
-    "deploy": "npm run build:example && npm run gh"
-    <% } %>
+    "build": "bili --filename index"<% } %>
   },
   "author": "<%= username %> <<%= email %>>",
   "license": "MIT",
